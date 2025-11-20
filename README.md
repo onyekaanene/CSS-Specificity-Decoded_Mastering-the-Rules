@@ -140,8 +140,6 @@ When writing CSS, follow these best practices:
 - Use the least specific selectors necessary. This approach makes your CSS more maintainable and easier to override when needed.
 - Use the !important rule judiciously. While it overrides any specificity, overreliance on !important can make your CSS difficult to manage.
 
-
-
 **Conclusion**
 
 Unlock the full potential of your CSS skills by mastering specificity! Understanding how specificity is calculated is the key to writing efficient, maintainable, and bug-free stylesheets. By grasping this fundamental concept, you'll:
