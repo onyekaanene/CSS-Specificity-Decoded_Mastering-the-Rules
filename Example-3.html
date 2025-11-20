@@ -1,0 +1,36 @@
+<!--
+Example 3: Multiple Selectors
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Specificity</title>
+  <style>
+    p {
+      color: black;
+    }
+
+    .text {
+      color: blue;
+    }
+
+    #important-text {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="important-text" class="text">This text will be green.</p>
+</body>
+
+</html>
+
+
+<!--
+In this case, the ID selector (#important-text) with a specificity score of (0,1,0,0) supersedes both the class selector (.text) (0,0,1,0) and the element selector (p) (0,0,0,1), resulting in green text.
+-->
