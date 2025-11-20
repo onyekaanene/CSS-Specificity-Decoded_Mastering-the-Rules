@@ -1,0 +1,32 @@
+<!--
+Example 2: ID Selector vs. Class Selector
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Specificity</title>
+  <style>
+    .text {
+      color: blue;
+    }
+
+    #important-text {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="important-text" class="text">This text will be green.</p>
+</body>
+
+</html>
+
+<!--
+In this scenario, the ID selector (#important-text) takes precedence due to its higher specificity score (0,1,0,0)
+compared to the class selector (.text) with a score of (0,0,1,0). As a result, the text will be displayed in green.
+-->
