@@ -1,0 +1,27 @@
+ <!--
+ Example 1: Inline Styles vs. Class Selector
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        .text {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="text" style="color: red;">This text will be red.</p>
+</body>
+</html>
+
+<!--
+In this example, the inline style (style="color: red;") overrides the class selector (.text), turning the text red instead of blue. But why? It's because inline styles have a higher specificity score (1,0,0,0) compared to class selectors (0,0,1,0). As a result, the inline style takes precedence.
+ -->
+
+
