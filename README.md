@@ -114,21 +114,21 @@ In this case, the ID selector (#important-text) with a specificity score of (0,1
 
 Here’s a quick reference table to summarize how specificity is calculated:
 
-Selector Type		Example	 		Specificity Score	
+Selector Type		        Example	 		        Specificity Score	
 
-Inline Styles		style="color: red;"	1,0,0,0
+Inline Styles		        style="color: red;"	        1,0,0,0
 
-ID Selector		#header			0,1,0,0
+ID Selector		            #header			        0,1,0,0
 
-Class Selector		.button			0,0,1,0
+Class Selector		        .button			        0,0,1,0
 
-Attribute Selector	[type="text"]		0,0,1,0
+Attribute Selector	        [type="text"]		        0,0,1,0
 
-Pseudo-class Selector	:hover			0,0,1,0
+Pseudo-class Selector	        :hover			        0,0,1,0
 
-Element Selector	p			0,0,0,1
+Element Selector	        p			        0,0,0,1
 
-Pseudo-element Selector	::before		0,0,0,1
+Pseudo-element Selector	        ::before		        0,0,0,1
 
 
 **Tips to Manage Specificity**
