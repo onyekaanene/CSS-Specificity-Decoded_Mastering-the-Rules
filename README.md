@@ -1,37 +1,36 @@
-# Customizing TextInput in React Native Form Fields
+# CSS Specificity Decoded: Mastering the Rules
 
-Small tweaks, big UX impact. This tutorial shows how the right `TextInput` props turn a generic form into a polished, intuitive experience.
+One of the most misunderstood concepts in CSS — demystified with a clear scoring system, real examples, and practical best practices.
 
 ## What It Covers
 
-- `autoCapitalize` — automatically capitalizing names the way users expect
-- `autoCorrect` — disabling autocorrect where it does more harm than good
-- `autoComplete` — giving the system hints to trigger smart autofill
-- `keyboardType` — surfacing the right keyboard for the right field
-- `secureTextEntry` — masking password input for security
+- How browsers resolve style conflicts using a four-tier specificity scoring system
+- The weight of inline styles, IDs, classes, and element selectors — with scores explained
+- Three progressively complex examples showing specificity in action
+- A quick-reference specificity table for everyday use
+- Best practices for writing maintainable, predictable CSS
 
 ## Why It Matters
 
-A form that fights the user loses. These props are the difference between an app that feels native and one that feels unfinished. Recruiters and users alike notice when a password field shows plain text, or when an email field pops up a regular keyboard. This tutorial demonstrates intentional, field-specific UX thinking — a signal that you build with the end user in mind.
+Unexplained style overrides are a silent productivity killer. Developers who understand specificity don't just fix bugs faster — they write CSS that doesn't create bugs in the first place. This tutorial reflects a foundational understanding of how the browser's rendering engine actually works, not just how to make things look right by trial and error.
 
-## Props at a Glance
+## Specificity Scores at a Glance
 
-| Field | Props Applied |
-|---|---|
-| Name | `autoCapitalize='words'`, `autoCorrect={false}` |
-| Email | `autoComplete="email"`, `keyboardType='email-address'` |
-| Password | `secureTextEntry={true}`, `autoComplete='password'` |
+| Selector Type | Example | Score |
+|---|---|---|
+| Inline Style | `style="color: red;"` | 1,0,0,0 |
+| ID | `#header` | 0,1,0,0 |
+| Class / Pseudo-class | `.button` / `:hover` | 0,0,1,0 |
+| Element / Pseudo-element | `p` / `::before` | 0,0,0,1 |
 
 ## Tech Stack
 
-- React Native & Expo CLI
-- `TextInput`, `View`, `Text`, `Button`, `StyleSheet` from `react-native`
-- React Hooks (`useState`)
-- Expo Go for real-device testing
+- HTML5 & CSS3
+- No frameworks — pure, portable browser fundamentals
 
 ---
 
-📖 [Read the full tutorial](https://www.onyekaanene.com/how-to-customize-text-input-in-form-fields/)
+📖 [Read the full tutorial](https://www.onyekaanene.com/css-specificity-decoded-mastering-the-rules/)
 
 [![GitHub](https://img.shields.io/badge/GitHub-onyekaanene-181717?style=flat&logo=github)](https://github.com/onyekaanene)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/onyekachukwu-anene)
